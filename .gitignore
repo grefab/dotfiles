@@ -1,0 +1,3 @@
+# ignore ALL directories (will whitelist some later)
+/*
+!.gitignore
