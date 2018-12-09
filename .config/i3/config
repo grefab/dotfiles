@@ -16,10 +16,11 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 
 # start nautilus
-bindsym $mod+n exec nautilus --no-desktop
+bindsym $mod+n exec nautilus 
 
 # lock
-bindsym $mod+Shift+x exec i3lock --color 475263
+## bindsym $mod+Shift+x exec i3lock --color 475263
+bindsym $mod+Shift+x exec ~/.config/i3/blurlock
 
 # start dmenu (like on OSX using $mod+space)
 # bindsym $mod+space exec dmenu_run
@@ -176,7 +177,7 @@ bar {
         position top
 
 	font pango:DejaVu Sans Mono for Powerline 8
-        status_command ~/.config/i3/bumblebee-status/bumblebee-status -m load cpu memory disk:home nic dnf pasource pasink battery date time -p interval=2.5 time.format="%H:%M:%S" date.format="%a, %b %d %Y CW %V" nic.exclude=lo,vmnet,virbr home.format="{percent:05.02f}%" nic.states="^down" home.path=/home memory.format="{percent:05.02f}%" -t solarized-powerline
+        status_command ~/.config/i3/bumblebee-status/bumblebee-status -m load cpu memory disk:home nic dnf pasource pasink battery date time -p interval=2.5 time.format="%H:%M:%S" date.format="%a, %b %d %Y CW %V" nic.exclude=lo,vmnet,virbr home.format="{percent:05.02f}%" nic.states="^down" home.path=/home memory.format="{percent:05.02f}%" -t solarized-dark-awesome
 
 #        status_command i3status
         tray_output primary
